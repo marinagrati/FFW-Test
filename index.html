@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./src/index.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="header_box">
+          <p class="header_title">Please select one font</p>
+          <ul id="nav-tab" class="nav">
+            <li class="active"><a href="#tab1">My Fonts</a></li>
+            <li><a href="#tab2">Buy Fonts</a></li>
+          </ul>
+          <button class="nav-toggler">
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+    <div class="tab-content">
+      <div class="container">
+        <div class="my-fonts tab-pane active" id="tab1">
+          <div class="all__cards">
+            <div class="leftgreen__card">
+              <div class="card_form">
+                <p class="green_square">M</p>
+              </div>
+              <div class="card_text_green">
+                <input type="radio" id="m" name="merriweather" value="m" />
+                <label for="m" class="label_green"
+                  >Merriweather project is led by Sorkin Type</label
+                >
+              </div>
+            </div>
+            <div class="right__cards">
+              <div class="pink">
+                <div class="card_form_pink">
+                  <p class="pink_square">R</p>
+                </div>
+                <div class="card-text_pink">
+                  <input type="radio" id="r" name="Roboto" value="r" checked />
+                  <label for="r"
+                    >Roboto doesn't compromise, allowing letters</label
+                  >
+                </div>
+              </div>
+              <div class="blue">
+                <div class="card_form_blue">
+                  <p class="blue_square">NS</p>
+                </div>
+                <div class="card-text_blue">
+                  <input type="radio" id="n" name="Noto" value="n" />
+                  <label for="n">Noto Sans covers over 30 scripts</label>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="buy-fonts tab-pane" id="tab2">
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor
+            veniam a maxime, quam quae quo molestias repudiandae iusto hic nobis
+            quod consequatur doloribus suscipit ad commodi alias ratione,
+            voluptatibus officia. Ea et, maiores aut soluta sit culpa?
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="./libs/jquery-3.6.0.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./src/index.js"></script>
+  </body>
+</html>
